@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
 import { LuEye, LuEyeOff } from "react-icons/lu";
-import logo from "/logo.png";
-import authImage from "../../../assets/authImage.jfif";
+// import logo from "/logo.png";
+// import authImage from "login.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 // import DynamicTitle from "../../../components/Shared/DynamicTitle/DynamicTitle";
 // import useAuth from "../../../hooks/useAuth";
-import { imageUpload } from "../../../api/utils";
+// import { imageUpload } from "../../../api/utils";
 import { TbFidgetSpinner } from "react-icons/tb";
-import useAxiosCommon from "../../../hooks/useAxiosCommon";
-import SocialLogin from "../../../components/Shared/SocialLogin/SocialLogin";
+// import useAxiosCommon from "../../../hooks/useAxiosCommon";
+// import SocialLogin from "../../../components/Shared/SocialLogin/SocialLogin";
 
 const SingUp = () => {
   const [toggle, setToggle] = useState(false);
-  const axiosCommon = useAxiosCommon();
+  // const axiosCommon = useAxiosCommon();
 
-  const { createUser, updateUserProfile, loading, setLoading } = useAuth();
+  // const { createUser, updateUserProfile, loading, setLoading } = useAuth();
 
   // navigate user
   const navigate = useNavigate();
@@ -90,7 +90,7 @@ const SingUp = () => {
 
   return (
     <div className="flex justify-center items-center min-h-[calc(100vh-306px)]">
-      <DynamicTitle pageTitle="Sign Up" />
+      {/* <DynamicTitle pageTitle="Sign Up" /> */}
       <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl ">
         <div className="w-full px-6 py-8 md:px-8 lg:w-1/2">
           <div className="flex justify-center mx-auto">
@@ -101,7 +101,7 @@ const SingUp = () => {
             Create an account
           </p>
 
-          <SocialLogin />
+          {/* <SocialLogin /> */}
 
           <div className="flex items-center justify-between mt-4">
             <span className="w-1/5 border-b  lg:w-1/4"></span>
@@ -257,7 +257,7 @@ const SingUp = () => {
                 type="submit"
                 className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#4D95EA] rounded-lg hover:bg-[#2f86eb] focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
               >
-                {loading ? (
+                {"loading" ? (
                   <TbFidgetSpinner className="animate-spin m-auto" />
                 ) : (
                   "Sign Up"
@@ -279,12 +279,12 @@ const SingUp = () => {
             <span className="w-1/5 border-b  md:w-1/4"></span>
           </div>
         </div>
-        <div
+        {/* <div
           className="hidden bg-cover bg-center lg:block lg:w-1/2"
           style={{
             backgroundImage: `url(${authImage})`,
           }}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );
