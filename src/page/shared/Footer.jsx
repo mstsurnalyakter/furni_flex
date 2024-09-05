@@ -12,172 +12,203 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="px-4 divide-y bg-[#4D95EA] text-black py-4">
-      <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+    <footer className="px-4 bg-[#0E0E0E] pt-10 pb-6">
+      <div className="max-w-7xl flex flex-col justify-between py-14 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <div className="flex justify-center space-x-3 lg:justify-start">
-            <div className="self-center gap-2 flex items-center text-lg md:text-2xl font-semibold">
+            {/* <div className="self-center gap-2 flex items-center text-lg md:text-2xl font-semibold">
               <img className="w-10" src={logo} alt="" />
               <h2 className="mt-3">LearnEnglish</h2>
-            </div>
+            </div> */}
+            <Link to={"/"} className="flex items-center justify-center gap-1">
+              <img className="w-6 rounded-full " src={logo} alt="" />
+              <h3 className="font-inter font-bold text-xl text-[#fff]">
+                Furni<span className="text-[#1E99F5]">Flex</span>
+              </h3>
+            </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 text-black font-medium text-sm gap-x-4 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+        <div className="grid grid-cols-2 text-[#81859F] font-medium text-sm gap-x-4 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           <div className="space-y-3 col-span-2">
-            <h3 className="tracking-wide capitalize ">Contact us</h3>
+            <h3 className="tracking-wide capitalize text-[#FFF] ">About US</h3>
             <ul className="space-y-3">
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                  href="#"
+                >
+                  Master Plan
+                </a>
+              </li>
               <li>
                 <a
                   rel="noopener noreferrer"
                   className="flex  items-center gap-2"
                   href="#"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                    />
-                  </svg>
-
-                  <span>
-                    987 Andre Plain Suit High Street 838, Lake Chestertown, USA
-                  </span>
+                  Jobs
                 </a>
               </li>
               <li>
                 <a
                   rel="noopener noreferrer"
                   className="flex  items-center gap-2"
-                  href="tel:+6599887733"
+                  href="#"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                    />
-                  </svg>
-
-                  <span>+6599887733</span>
+                  Invest
                 </a>
               </li>
               <li>
                 <a
                   rel="noopener noreferrer"
                   className="flex  items-center gap-2"
-                  href="mailto:paperGlassArtistry@gmail.com"
+                  href="#"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                    />
-                  </svg>
-
-                  <span>learnEnglish@gmail.com</span>
+                  Pressroom
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="space-y-3">
-            <h3 className="tracking-wide capitalize ">Useful Links</h3>
+            <h3 className="tracking-wide capitalize text-[#FFF]">
+              Explore EEVE{" "}
+            </h3>
             <ul className="space-y-5">
               <li>
-                <Link to={"/"}>Home</Link>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Unlock my Robot Power
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Starlight
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Robot Platform
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  EEVE Roadmap
+                </a>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
-            <div className="capitalize">Social media</div>
-            <div className="flex flex-wrap text-white items-center justify-start space-x-3 text-2xl">
-              <a
-                rel="noopener noreferrer"
-                href="https://github.com/mstsurnalyakter"
-                id="gitHub"
-                target="_blank"
-                className="flex items-center p-1"
-              >
-                <FaGithub />
-              </a>
-              <Tooltip anchorSelect="#gitHub" content="GitHub" />
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://twitter.com/mstsurnalyakter"
-                id="twitter"
-                className="flex items-center p-1"
-              >
-                <AiFillTwitterCircle />
-              </a>
-              <Tooltip anchorSelect="#twitter" content="Twitter" />
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://www.instagram.com/mstsurnalyakte/?hl=en"
-                id="instagram"
-                className="flex items-center p-1"
-              >
-                <FaInstagram />
-              </a>
-              <Tooltip anchorSelect="#instagram" content="Instagram" />
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://web.facebook.com/mstsurnalyakter"
-                id="facebook"
-                className="flex items-center p-1"
-              >
-                <FaFacebook />
-              </a>
-              <Tooltip anchorSelect="#facebook" content="Facebook" />
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/mst-surnaly-akter/"
-                id="linkedIn"
-                className="flex items-center p-1"
-              >
-                <FaLinkedinIn />
-              </a>
-              <Tooltip anchorSelect="#linkedIn" content="LinkedIn" />
-            </div>
+            <h3 className="tracking-wide capitalize text-[#FFF]">
+              Community & Support
+            </h3>
+            <ul className="space-y-5">
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Willow X Community
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Developer & Maker Access
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  className="flex  items-center gap-2"
+                  href="#"
+                >
+                  Special Cases
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="border-b-2 border-[#13131326]"></div>
+      <div className="border-t-[1px] max-w-7xl pb-10 mx-auto border-[#252948]"></div>
+      <div className="flex justify-between max-w-7xl mx-auto items-center">
+        <div className="flex pb-5 gap-2">
+          <a href="#">
+            <img src="facebook-02.png" alt="" />
+          </a>
+          <a href="#">
+            {" "}
+            <img src="instagram.png" alt="" />
+          </a>
+          <a href="#">
+            {" "}
+            <img src="new-twitter.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="linkedin-02.svg" alt="" />
+          </a>
+        </div>
+        <div className="text-[#81859F] space-x-6 text-lg font-semibold">
+          <a href="#">March22 Recap</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">General Terms</a>
+          <a href="#">Contact</a>
+        </div>
+        <div className="flex items-center gap-2">
+          <img className="text-4xl w-5 h-5"  src="us.png" alt="" />
+          <h3 className="text-[#81859F] font-semibold text-lg">United States (English)</h3>
+        </div>
+      </div>
+      {/*
+      <div>
+        <div>
+
+        </div>
+        <div></div>
+        <div></div>
+      </div> */}
+      <div></div>
       <div className="py-6 text-sm text-center dark:text-gray-600">
-        <p className="text-black font-medium">
-          Copyright © {new Date().getFullYear()} - All right reserved by{" "}
-          <span className="font-extrabold">LearnEnglish</span>
+        <p className="text-[#323544] font-semibold text-lg">
+          EEVE © {new Date().getFullYear()}.All rights reserved.
         </p>
       </div>
     </footer>
