@@ -166,7 +166,19 @@ const Login = () => {
           style={{
             backgroundImage: `url(${authImage})`,
           }}
-        ></div>
+        >
+          <div className="flex flex-col mx-auto h-full items-center justify-center w-3/4 space-y-1">
+            <img className="w-16" src="icon.png" alt="" />
+            <h3 className="text-[#FFF] font-inter font-bold text-4xl">
+              Furni<span className="text-[#1E99F5]">Flex</span>
+            </h3>
+            <p className="text-[#C8C4C4] text-center">
+              Discover a seamless shopping experience with our curated
+              collection of products. From fashion to electronics, we bring
+              quality.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
