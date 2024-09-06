@@ -1,8 +1,8 @@
 import { useContext } from 'react'
-import ProductsProvider from '../providers/ProductsProvider'
+import  { ProductsContext } from '../providers/ProductsProvider'
 
 const useProducts = () => {
-    const products = useContext(ProductsProvider)
+    const products = useContext(ProductsContext);
   return products;
 }
 

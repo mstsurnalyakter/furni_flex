@@ -319,30 +319,6 @@ const NavBar = () => {
                   ))}
                 </div>
               </>
-              {/* {!user && (
-                <>
-                  <NavLink
-                    to={"/login"}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "bg-[#1E99F5] px-3 py-1  text-white  rounded-lg"
-                        : "text-[#131313CC] border border-[#1E99F5] px-3 py-1 rounded-lg"
-                    }
-                  >
-                    Login
-                  </NavLink>
-                  <NavLink
-                    to={"/signup"}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "bg-[#1E99F5] px-3 py-1  text-white  rounded-lg"
-                        : "text-[#131313CC] border border-[#1E99F5] px-3 py-1 rounded-lg"
-                    }
-                  >
-                    SignUp
-                  </NavLink>
-                </>
-              )} */}
             </div>
           </div>
         </Collapse>
