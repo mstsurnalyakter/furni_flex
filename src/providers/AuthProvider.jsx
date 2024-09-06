@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
 import {
-  GithubAuthProvider,
   GoogleAuthProvider,
   OAuthProvider,
   createUserWithEmailAndPassword,
@@ -13,15 +12,13 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-// import { app } from "../firebase/firebase.config";
-// import useAxiosCommon from "../hooks/useAxiosCommon";
+import { app } from "../firebase/firebase.config";
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const appleProvider = new OAuthProvider();
 
 const AuthProvider = ({ children }) => {
-  // const axiosCommon = useAxiosCommon();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -52,9 +49,6 @@ const AuthProvider = ({ children }) => {
 
   const logOut = async () => {
     setLoading(true);
-    // await axios.get(`${import.meta.env.VITE_API_URL}/logout`, {
-    //   withCredentials: true,
-    // });
     return signOut(auth);
   };
 
@@ -65,7 +59,6 @@ const AuthProvider = ({ children }) => {
     });
   };
 
-  // onAuthStateChange
   // onAuthStateChange
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {

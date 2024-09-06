@@ -12,12 +12,13 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
+import useAuth from "../../Hooks/useAuth";
 // import useAuth from "../../hooks/useAuth";
 
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
 
-//   const { user, logOut } = useAuth();
+  const { user, logOut } = useAuth();
 
   const handleLogOut = () => {
     logOut()
@@ -107,7 +108,7 @@ const NavBar = () => {
           </Typography>
           <div className="hidden gap-4 lg:flex items-center">
             <div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-center">
                 <>
                   <NavLink
                     to={"/"}
@@ -159,6 +160,24 @@ const NavBar = () => {
                   >
                     Blog
                   </NavLink>
+                  <>
+                    {user ? (
+                      <button onClick={()=>handleLogOut()} className="bg-red-400 px-3 py-1 rounded-md ">
+                        LogOut
+                      </button>
+                    ) : (
+                      <NavLink
+                        to={"/login"}
+                        className={({ isActive }) =>
+                          isActive
+                            ? "bg-[#F8F8F8] text-[#202020] px-2 py-1 flex items-center justify-center  rounded-lg"
+                            : "px-3 py-1 text-[#fff] bg-[#1E99F5] rounded-lg text-lg font-medium"
+                        }
+                      >
+                        Login
+                      </NavLink>
+                    )}
+                  </>
                 </>
               </div>
             </div>
@@ -259,7 +278,7 @@ const NavBar = () => {
                 >
                   Blog
                 </NavLink>
-                
+
                 <div className="relative flex sm:hidden items-center justify-center">
                   <span className="text-3xl text-[#323232]">
                     <SlHandbag />
@@ -268,6 +287,24 @@ const NavBar = () => {
                     0
                   </span>
                 </div>
+                <>
+                  {user ? (
+                    <button className="bg-red-400 px-3 py-1 rounded-md ">
+                      LogOut
+                    </button>
+                  ) : (
+                    <NavLink
+                      to={"/login"}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "bg-[#F8F8F8] text-[#202020] px-2 py-1 flex items-center justify-center  rounded-lg"
+                          : "px-3 py-1 text-[#fff] bg-[#1E99F5] rounded-lg text-lg font-medium"
+                      }
+                    >
+                      Login
+                    </NavLink>
+                  )}
+                </>
                 <div className=" bg-[#1E99F5] sm:hidden items-center justify-center flex flex-wrap rounded">
                   {options?.map((opt) => (
                     <button
