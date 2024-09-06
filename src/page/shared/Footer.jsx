@@ -170,7 +170,7 @@ const Footer = () => {
       </div>
       <div className="border-t-[1px] max-w-7xl pb-10 mx-auto border-[#252948]"></div>
       <div className="flex justify-between max-w-7xl mx-auto items-center">
-        <div className="flex pb-5 gap-2">
+        <div className="flex flex-wrap pb-5 gap-2">
           <a href="#">
             <img src="facebook-02.png" alt="" />
           </a>
@@ -186,7 +186,7 @@ const Footer = () => {
             <img src="linkedin-02.svg" alt="" />
           </a>
         </div>
-        <div className="text-[#81859F] space-x-6 text-lg font-semibold">
+        <div className="text-[#81859F] flex-wrap flex space-x-6 text-lg font-semibold">
           <a href="#">March22 Recap</a>
           <a href="#">Privacy Policy</a>
           <a href="#">General Terms</a>
@@ -197,14 +197,7 @@ const Footer = () => {
           <h3 className="text-[#81859F] font-semibold text-lg">United States (English)</h3>
         </div>
       </div>
-      {/*
-      <div>
-        <div>
 
-        </div>
-        <div></div>
-        <div></div>
-      </div> */}
       <div></div>
       <div className="py-6 text-sm text-center dark:text-gray-600">
         <p className="text-[#323544] font-semibold text-lg">
