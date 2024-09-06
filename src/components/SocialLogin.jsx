@@ -1,11 +1,11 @@
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
 import { IoLogoApple } from "react-icons/io5";
-// import useAuth from "../../../hooks/useAuth";
-// import useAxiosCommon from "../../../hooks/useAxiosCommon";
+import useAuth from "../Hooks/useAuth";
+
 
 const SocialLogin = () => {
-//   const { signInWithGoogle, signInWithGitHub } = useAuth();
+  const { signInWithGoogle, signInWithApple } = useAuth();
 //   const axiosCommon = useAxiosCommon();
 
   // navigate user
@@ -14,52 +14,42 @@ const SocialLogin = () => {
   const from = location?.state || "/";
 
   // handle google sign in
-//   const handleGoogleSignIn = async () => {
-//     try {
-//     //   const { user } = await signInWithGoogle();
+  const handleGoogleSignIn = async () => {
+    try {
+      const { user } = await signInWithGoogle();
+       if (user) {
+         toast.success("SignIn with Google Successful");
+         setTimeout(() => {
+           navigate(from);
+           window.location.reload();
+         }, 2000);
+       }
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
+  // handle apple sign in
+  const handleAppleSignIn = async () => {
+    try {
+      const { user } = await signInWithApple();
 
-//       const userInfo = {
-//         name: user?.displayName,
-//         email: user?.email,
-//         imageURL: user?.photoURL,
-//         role: "student",
-//       };
-
-//     //   await axiosCommon.put("/users", userInfo);
-
-//       navigate(from);
-//       toast.success("Sign In with Google successful.");
-//     } catch (error) {
-//       toast.error(error.message);
-//     }
-//   };
-//   // handle google sign in
-//   const handleGithubSignIn = async () => {
-//     try {
-//       const { user } = await signInWithGitHub();
-
-//       console.log("github login", user);
-
-//       const userInfo = {
-//         name: user?.displayName,
-//         email: user?.email,
-//         imageURL: user?.photoURL,
-//         role: "student",
-//       };
-
-//       await axiosCommon.put("/users", userInfo);
-
-//       navigate(from);
-//       toast.success("Sign In with GitHub successful.");
-//     } catch (error) {
-//       toast.error(error.message);
-//     }
-//   };
+      console.log("github login", user);
+       if (user) {
+         toast.success("SignIn with Apple Successful");
+         setTimeout(() => {
+           navigate(from);
+           window.location.reload();
+         }, 2000);
+       }
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
 
   return (
     <div className="flex flex-row gap-2">
       <div
-        // onClick={handleGoogleSignIn}
+        onClick={()=>handleGoogleSignIn()}
         className="flex cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg py-2 px-1  hover:bg-gray-50 "
       >
         <div className="">
@@ -89,7 +79,7 @@ const SocialLogin = () => {
       </div>
 
       <div
-        // onClick={handleGithubSignIn}
+        onClick={()=>handleAppleSignIn()}
         className="flex py-2 px-1 cursor-pointer items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg   hover:bg-gray-50 "
       >
         <div>

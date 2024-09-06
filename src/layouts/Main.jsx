@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className="font-barlow dark:bg-blue-gray-900  duration-100">
       <NavBar />
-      <div className="mx-auto max-w-7xl my-10 px-7 lg:px-2  min-h-[calc(100vh-780px)]">
+      <div className="mx-auto max-w-7xl my-10 px-7 lg:px-2  min-h-[calc(100vh-660px)]">
         <Outlet />
       </div>
 
