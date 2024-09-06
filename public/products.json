@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Rocking Chair",
+    "type": "Rocking chair",
+    "price": 200,
+    "discount": 10,
+    "discount_price": 180,
+    "description": "A classic wooden rocking chair for relaxation.",
+    "image": "https://i.postimg.cc/g2F8yh25/Classic-Rocking-Chair.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Modern Rocking Chair",
+    "type": "Rocking chair",
+    "price": 350,
+    "discount": 15,
+    "discount_price": 297.5,
+    "description": "A modern take on the traditional rocking chair.",
+    "image": "https://i.postimg.cc/fRVkQqyp/Accent-Chair.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Cushioned Rocking Chair",
+    "type": "Rocking chair",
+    "price": 250,
+    "discount": 12,
+    "discount_price": 220,
+    "description": "A comfortable cushioned rocking chair.",
+    "image": "https://i.postimg.cc/3RNWgr5W/Cushioned-Rocking-Chair.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Contemporary Rocking Chair",
+    "type": "Rocking chair",
+    "price": 400,
+    "discount": 8,
+    "discount_price": 368,
+    "description": "A contemporary rocking chair with sleek design.",
+    "image": "https://i.postimg.cc/W4hhZbPz/Contemporary-Rocking-Chair.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Rustic Rocking Chair",
+    "type": "Rocking chair",
+    "price": 275,
+    "discount": 5,
+    "discount_price": 261.25,
+    "description": "A rustic style rocking chair made from reclaimed wood.",
+    "image": "https://i.postimg.cc/C185vP5V/Rustic-Rocking-Chair.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Ergonomic Rocking Chair",
+    "type": "Rocking chair",
+    "price": 300,
+    "discount": 7,
+    "discount_price": 279,
+    "description": "An ergonomic rocking chair designed for comfort.",
+    "image": "https://i.postimg.cc/jSGr8s7L/Ergonomic-Rocking-Chair.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Upholstered Side Chair",
+    "type": "Side chair",
+    "price": 150,
+    "discount": 10,
+    "discount_price": 135,
+    "description": "A stylish upholstered side chair with soft fabric.",
+    "image": "https://i.postimg.cc/fRVkQqyp/Accent-Chair.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Wooden Side Chair",
+    "type": "Side chair",
+    "price": 120,
+    "discount": 12,
+    "discount_price": 105.6,
+    "description": "A simple and elegant wooden side chair.",
+    "image": "https://i.postimg.cc/RZJkJjD9/Wooden-Side-Chair.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Vintage Side Chair",
+    "type": "Side chair",
+    "price": 180,
+    "discount": 10,
+    "discount_price": 162,
+    "description": "A vintage style side chair for your living room.",
+    "image": "https://i.postimg.cc/fybFzF9G/Vintage-Side-Chair.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Minimalist Side Chair",
+    "type": "Side chair",
+    "price": 200,
+    "discount": 8,
+    "discount_price": 184,
+    "description": "A minimalist side chair with a clean design.",
+    "image": "https://i.postimg.cc/XJj1LhQr/Side-chair.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Designer Side Chair",
+    "type": "Side chair",
+    "price": 250,
+    "discount": 15,
+    "discount_price": 212.5,
+    "description": "A designer side chair for modern interiors.",
+    "image": "https://i.postimg.cc/qqYmk70K/side2.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Curved Side Chair",
+    "type": "Side chair",
+    "price": 160,
+    "discount": 10,
+    "discount_price": 144,
+    "description": "A curved side chair for added comfort and style.",
+    "image": "https://i.postimg.cc/MZr309RG/side3.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Luxury Lounge Chair",
+    "type": "Lounge chair",
+    "price": 600,
+    "discount": 10,
+    "discount_price": 540,
+    "description": "A luxury lounge chair with premium materials.",
+    "image": "https://i.postimg.cc/NMCD40Kn/lounge2.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Leather Lounge Chair",
+    "type": "Lounge chair",
+    "price": 700,
+    "discount": 15,
+    "discount_price": 595,
+    "description": "A leather lounge chair for a classic look.",
+    "image": "https://i.postimg.cc/x8WPwFyy/lounge3.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Fabric Lounge Chair",
+    "type": "Lounge chair",
+    "price": 550,
+    "discount": 8,
+    "discount_price": 506,
+    "description": "A fabric lounge chair with soft, plush seating.",
+    "image": "https://i.postimg.cc/nzrYCt3G/lounge4.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Reclining Lounge Chair",
+    "type": "Lounge chair",
+    "price": 750,
+    "discount": 12,
+    "discount_price": 660,
+    "description": "A reclining lounge chair for ultimate relaxation.",
+    "image": "https://i.postimg.cc/tR1wc096/lounge5.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Outdoor Lounge Chair",
+    "type": "Lounge chair",
+    "price": 500,
+    "discount": 10,
+    "discount_price": 450,
+    "description": "An outdoor lounge chair for your patio or garden.",
+    "image": "https://i.postimg.cc/7YZG4NQS/lounge7.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Mid-Century Lounge Chair",
+    "type": "Lounge chair",
+    "price": 620,
+    "discount": 10,
+    "discount_price": 558,
+    "description": "A mid-century modern lounge chair with a timeless design.",
+    "image": "https://i.postimg.cc/52HXY2J0/lounge8.jpg"
+  }
+]
