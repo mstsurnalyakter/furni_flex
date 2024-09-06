@@ -53,9 +53,6 @@ const Login = () => {
       {/* <DynamicTitle pageTitle="Login" /> */}
       <div className="flex w-full  max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl ">
         <div className="w-full px-6 py-8 md:px-8 lg:w-1/2 ">
-          <div className="flex justify-center mx-auto">
-            {/* <img className="w-auto h-7 sm:h-8" src={logo} alt="" /> */}
-          </div>
           <div className="bg-[#FAFAFA] py-5 px-5 mt-10 mx-10">
             <h3 className="text-[#000] text-3xl font-medium">Welcome Back!</h3>
             <p className="text-[#707070] text-sm font-medium">
