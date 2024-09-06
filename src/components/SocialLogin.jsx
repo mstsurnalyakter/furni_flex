@@ -83,7 +83,7 @@ const SocialLogin = () => {
           </svg>
         </div>
 
-        <span className="font-bold text-center">
+        <span className="font-bold  text-sm">
           Sign in with Google
         </span>
       </div>
@@ -96,7 +96,7 @@ const SocialLogin = () => {
           <IoLogoApple />
         </div>
 
-        <span className="font-bold text-center">
+        <span className="font-bold text-sm">
           Sign in with Apple
         </span>
       </div>

@@ -5,25 +5,33 @@ import Login from "../page/authentication/Login";
 import SingUp from "../page/authentication/SingUp";
 
 const router = createBrowserRouter([
-    {
-        path:"/",
-        element:<Main/>,
-        children:[
-            {
-                path:"/",
-                element:<Home/>
-            },
-            {
-                path:"/login",
-                element:<Login/>
-            },
-            {
-                path:"/signup",
-                element:<SingUp/>
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Main />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      // {
+      //     path:"/login",
+      //     element:<Login/>
+      // },
+      // {
+      //     path:"/signup",
+      //     element:<SingUp/>
+      // }
+    ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/signup",
+    element: <SingUp />,
+  },
+]);
 
 
 export default router;
