@@ -4,13 +4,22 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { saveProductIdToLS } from "../utils/localStore";
+
+
 
 
 const ProductCard = ({ item }) => {
+   const id = parseInt(item.id);
+
+  const handleProduct = () =>{
+    saveProductIdToLS(id);
+  }
+
+
   return (
     <div>
       <Card className="mx-auto relative overflow-hidden min-h-[400px] flex flex-col">
@@ -50,7 +59,7 @@ const ProductCard = ({ item }) => {
           <Typography variant="small" color="gray" className="mt-3 font-normal">
             {item?.description}
           </Typography>
-          <Button className="bg-[#202020] capitalize w-full rounded-md flex gap-2 items-center justify-center">
+          <Button onClick={handleProduct} className="bg-[#202020] capitalize w-full rounded-md flex gap-2 items-center justify-center">
             <SlHandbag />
             <span>Add to cart</span>
           </Button>

@@ -13,10 +13,13 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 import useAuth from "../../Hooks/useAuth";
+import useGetProducts from "../../Hooks/useGetProducts";
 // import useAuth from "../../hooks/useAuth";
 
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
+  const addProducts = useGetProducts();
+ 
 
   const { user, logOut } = useAuth();
 
@@ -162,7 +165,10 @@ const NavBar = () => {
                   </NavLink>
                   <>
                     {user ? (
-                      <button onClick={()=>handleLogOut()} className="bg-red-400 px-3 py-1 rounded-md ">
+                      <button
+                        onClick={() => handleLogOut()}
+                        className="bg-red-400 px-3 py-1 rounded-md "
+                      >
                         LogOut
                       </button>
                     ) : (
@@ -183,14 +189,20 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex flex-col items-center sm:flex-row gap-4">
-            <div className="relative hidden sm:flex items-center justify-center">
+            <Link to={"/carts"} className="relative hidden sm:flex items-center justify-center">
               <span className="text-3xl text-[#323232]">
                 <SlHandbag />
               </span>
-              <span className="bg-[#323232] absolute left-4 top-5 px-1 font-medium rounded-full text-xs">
-                0
+              <span
+                className={` ${
+                  addProducts?.length > 0
+                    ? "bg-red-700 text-white"
+                    : "bg-[#323232]"
+                } absolute left-4 top-5 px-1 font-medium rounded-full text-xs`}
+              >
+                {addProducts?.length}
               </span>
-            </div>
+            </Link>
 
             {/* Theme Toggle Buttons */}
             <div className=" bg-[#1E99F5] hidden items-center justify-center sm:flex flex-wrap rounded">
@@ -279,14 +291,20 @@ const NavBar = () => {
                   Blog
                 </NavLink>
 
-                <div className="relative flex sm:hidden items-center justify-center">
+                <Link to={"/carts"} className="relative flex sm:hidden items-center justify-center">
                   <span className="text-3xl text-[#323232]">
                     <SlHandbag />
                   </span>
-                  <span className="bg-[#323232] absolute left-4 top-5 px-1 font-medium rounded-full text-xs">
-                    0
+                  <span
+                    className={` ${
+                      addProducts?.length > 0
+                        ? "bg-red-700 text-white"
+                        : "bg-[#323232]"
+                    } absolute left-4 top-5 px-1 font-medium rounded-full text-xs`}
+                  >
+                    {addProducts?.length}
                   </span>
-                </div>
+                </Link>
                 <>
                   {user ? (
                     <button className="bg-red-400 px-3 py-1 rounded-md ">
