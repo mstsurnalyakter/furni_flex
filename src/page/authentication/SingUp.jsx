@@ -83,7 +83,6 @@ const SingUp = () => {
 
   return (
     <div className="flex mt-10 justify-center items-center min-h-[calc(100vh-306px)]">
-      {/* <DynamicTitle pageTitle="Sign Up" /> */}
       <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl ">
         <div className="w-full px-1 py-8 lg:w-1/2">
           <div className="bg-[#FAFAFA] py-5 px-3 mt-10 mx-10">

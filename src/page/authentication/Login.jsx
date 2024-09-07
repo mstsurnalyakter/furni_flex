@@ -4,12 +4,11 @@ import authImage from "./../../../public/login.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import { TbFidgetSpinner } from "react-icons/tb";
 import SocialLogin from "../../components/SocialLogin";
 
 const Login = () => {
   const [toggle, setToggle] = useState(false);
-  // const { signIn, loading, setLoading } = useAuth();
+
 
   // navigate user
   const navigate = useNavigate();
@@ -50,7 +49,6 @@ const Login = () => {
 
   return (
     <div className="flex mt-20 justify-center items-center min-h-[calc(100vh-306px)]">
-      {/* <DynamicTitle pageTitle="Login" /> */}
       <div className="flex w-full  max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg  lg:max-w-4xl ">
         <div className="w-full px-6 py-8 md:px-8 lg:w-1/2 ">
           <div className="bg-[#FAFAFA] py-5 px-5 mt-10 mx-10">

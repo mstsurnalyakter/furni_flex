@@ -188,14 +188,14 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex flex-col items-center sm:flex-row gap-4">
-            <div>
+            {user && <div>
               <img
                 title={user?.displayName}
                 className="w-10 h-10 rounded-full"
                 src={user?.photoURL}
                 alt=""
               />
-            </div>
+            </div>}
             <Link
               to={"/carts"}
               className="relative hidden sm:flex items-center justify-center"
