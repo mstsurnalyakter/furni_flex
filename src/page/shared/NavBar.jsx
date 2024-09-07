@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import logo from "/icon.png";
-// import { Tooltip } from "react-tooltip";
 import { SlHandbag } from "react-icons/sl";
 import {
   Navbar,
@@ -14,12 +13,12 @@ import { Link, NavLink } from "react-router-dom";
 import toast from "react-hot-toast";
 import useAuth from "../../Hooks/useAuth";
 import useGetProducts from "../../Hooks/useGetProducts";
-// import useAuth from "../../hooks/useAuth";
 
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
   const addProducts = useGetProducts();
- 
+
+
 
   const { user, logOut } = useAuth();
 
@@ -189,7 +188,18 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex flex-col items-center sm:flex-row gap-4">
-            <Link to={"/carts"} className="relative hidden sm:flex items-center justify-center">
+            <div>
+              <img
+                title={user?.displayName}
+                className="w-10 h-10 rounded-full"
+                src={user?.photoURL}
+                alt=""
+              />
+            </div>
+            <Link
+              to={"/carts"}
+              className="relative hidden sm:flex items-center justify-center"
+            >
               <span className="text-3xl text-[#323232]">
                 <SlHandbag />
               </span>
@@ -291,7 +301,10 @@ const NavBar = () => {
                   Blog
                 </NavLink>
 
-                <Link to={"/carts"} className="relative flex sm:hidden items-center justify-center">
+                <Link
+                  to={"/carts"}
+                  className="relative flex sm:hidden items-center justify-center"
+                >
                   <span className="text-3xl text-[#323232]">
                     <SlHandbag />
                   </span>
