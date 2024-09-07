@@ -1,32 +1,3 @@
-// const getProductLS = () => {
-//   const productId = localStorage.getItem("productId");
-//   return productId ? JSON.parse(productId) : [];
-// };
-
-import toast from "react-hot-toast";
-
-// const saveProductIdToLS = (id) => {
-//   const getProductId = getProductLS();
-//   const isExitProductId = getProductId.find((productId) => productId === id);
-
-//   if (isExitProductId) {
-//     toast.error("You have Already added Product");
-//   } else {
-//     getProductId.push(id);
-//     localStorage.setItem("productId", JSON.stringify(getProductId));
-//     toast.success("Product added to Cart Successfully!");
-//   }
-// };
-
-
-// export {
-//     getProductLS,
-//     saveProductIdToLS,
-// }
-
-
-
-
 // Function to retrieve product IDs from localStorage
 const getProductLS = () => {
   const productId = localStorage.getItem("productId");
@@ -56,8 +27,17 @@ const removeProductIdFromLS = (id) => {
   }
 };
 
+const checkout = () => {
+  localStorage.clear();
+  window.location.reload();
+
+};
+
+
 export {
   getProductLS,
   saveProductIdToLS,
   removeProductIdFromLS,
+  checkout
+
 };

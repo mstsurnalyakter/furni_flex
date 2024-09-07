@@ -8,6 +8,10 @@ const Carts = () => {
         removeProductIdFromLS(id);
     }
 
+    const handleCheckout = () =>{
+      checkout();
+    }
+
     const totalDiscountPrice = addProducts.reduce(
       (sum, item) => sum + item.discount_price,
       0
@@ -61,7 +65,7 @@ const Carts = () => {
             <b>{totalDiscountPrice}</b>
           </div>
         </div>
-        <button className="bg-[#202020] w-full py-2 text-white rounded-md">Go to Checkout</button>
+        <button onClick={()=>handleCheckout()} className="bg-[#202020] w-full py-2 text-white rounded-md">Go to Checkout</button>
       </div>
     </div>
   );
